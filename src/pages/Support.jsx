@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 const Support = () => {
   return (
     <div className="bg-black text-white min-h-screen p-8">
-      {/* Header Section */}
       <header className="text-center mb-12">
         <motion.h1
           className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-red-500"
@@ -24,7 +23,6 @@ const Support = () => {
         </motion.p>
       </header>
 
-      {/* Contact Information */}
       <section className="mb-12 max-w-4xl mx-auto">
         <motion.h2
           className="text-3xl md:text-4xl font-semibold mb-4 text-red-500"
@@ -88,7 +86,6 @@ const Support = () => {
         </div>
       </section>
 
-      {/* Downloadable Resources */}
       <section className="mb-12 max-w-4xl mx-auto">
         <motion.h2
           className="text-3xl md:text-4xl font-semibold mb-4 text-red-500"

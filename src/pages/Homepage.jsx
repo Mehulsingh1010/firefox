@@ -1,13 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img from "./firefox.jpg"; // Assuming you have this local image
+import img from "./firefox.jpg"; 
 
 const Homepage = () => {
-  // Text content
+
   const headerText = "SAY NO TO RAGGING";
   const footerText = "At VIT-Bhopal, we are dedicated to creating a safe and respectful campus environment. Our commitment to anti-ragging measures ensures that every student feels supported and valued. This website serves as a resource for understanding the importance of preventing ragging and provides essential tools for reporting incidents and seeking help. Your safety and well-being are our top priority.";
 
-  // Function to split text into words for animation
   const splitText = (text) => text.split(" ").map((word, index) => (
     <motion.span
       key={index}
@@ -23,14 +22,12 @@ const Homepage = () => {
   return (
     <>
       <div className="bg-red-600 h-screen w-full flex flex-col">
-        {/* Header Section */}
         <header className="h-[15vh] text-center flex items-center justify-center bg-black">
           <h1 className="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl leading-tight tracking-wide">
             {splitText(headerText)}
           </h1>
         </header>
 
-        {/* Image and Buttons Section */}
         <div className="relative flex flex-col items-center justify-center flex-1 py-8">
           <img
             className="h-[400px] w-auto object-cover rounded-lg shadow-lg"
@@ -39,7 +36,6 @@ const Homepage = () => {
           />
         </div>
 
-        {/* Information Section */}
         <footer className="bg-black text-white text-center py-8">
           <div className="max-w-4xl mx-auto px-4">
             {splitText(footerText).map((word, index) => (
@@ -57,7 +53,6 @@ const Homepage = () => {
         </footer>
       </div>
 
-      {/* Additional Black Background Section */}
       <div className="h-screen bg-black flex flex-col justify-center items-center text-center px-4">
         <motion.h1
           className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold mt-[-100px] mb-12"
@@ -68,7 +63,6 @@ const Homepage = () => {
           Take Action Against Ragging
         </motion.h1>
         <div className="flex flex-col lg:flex-row w-full max-w-6xl mx-auto mb-12">
-          {/* First Row: Image on the Left, Text and Button on the Right */}
           <motion.div
             className="flex flex-col lg:flex-row items-center justify-between w-full mb-6 lg:mb-0"
             initial={{ opacity: 0, x: -50 }}
@@ -93,7 +87,6 @@ const Homepage = () => {
             </div>
           </motion.div>
 
-          {/* Second Row: Image on the Right, Text and Button on the Left */}
           <motion.div
             className="flex flex-col lg:flex-row items-center justify-between w-full"
             initial={{ opacity: 0, x: 50 }}
@@ -120,7 +113,6 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* Video Section */}
       <div className="bg-black mt-[-150px] pb-[60px] px-4">
         <h2 className="text-white text-center text-2xl md:text-3xl lg:text-4xl font-semibold mb-8">
           Watch Our Informative Video

@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 const Laws = () => {
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center p-8">
-      {/* Header Section */}
       <header className="text-center mb-12 max-w-4xl">
         <motion.h1
           className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-red-500"
@@ -24,7 +23,6 @@ const Laws = () => {
         </motion.p>
       </header>
 
-      {/* National Policies */}
       <section className="mb-12 max-w-4xl">
         <motion.h2
           className="text-3xl md:text-4xl font-semibold mb-4 text-red-500"
@@ -71,7 +69,6 @@ const Laws = () => {
         </motion.ul>
       </section>
 
-      {/* University Policies */}
       <section className="mb-12 max-w-4xl">
         <motion.h2
           className="text-3xl md:text-4xl font-semibold mb-4 text-red-500"
@@ -118,7 +115,6 @@ const Laws = () => {
         </motion.ul>
       </section>
 
-      {/* Call to Action */}
      
     </div>
   );
